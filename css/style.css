@@ -1,0 +1,190 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.hero-txt {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.hero-txt h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #000;
+	color: #ddd;
+}
+.hero-txt span {
+	text-transform: uppercase;
+	color: #09f;
+}
+.section-title {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+section {
+	scroll-margin-top: 70px;
+}
+
+/* NAWIGACJA */
+nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+	text-align: center;
+	z-index: 10;
+}
+
+.burger-icon {
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	font-size: 30px;
+	line-height: 60px;
+	border: none;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.burger-icon:hover {
+	background-color: #000;
+	color: #09f;
+}
+.nav-items {
+	display: none;
+}
+
+/* HEADER*/
+.header {
+	position: relative;
+	height: 300px;
+	background-image: url("../img/herosmall.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+/*MAIN*/
+main {
+	margin: 50px 0;
+}
+.about-us-info {
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+/*PRODUCTS*/
+.products {
+	margin: 50px auto;
+}
+.product {
+	position: relative;
+	height: 300px;
+	background-position: center;
+	background-size: cover;
+}
+.product h3 {
+	transition: 0.4s;
+}
+.product:hover h3 {
+	transform: scale(1.6);
+}
+.first-product {
+	background-image: url(../img/bubbleice.jpg);
+}
+.second-product {
+	background-image: url(../img/bubbledark.jpg);
+}
+.third-product {
+	background-image: url(../img/bubblesoap.jpg);
+}
+.fourth-product {
+	background-image: url(../img/bubblewater.jpg);
+}
+
+/*CONTACT*/
+.contact p {
+	text-align: center;
+}
+.contact h3 {
+	margin: 20px 0 5px;
+	text-align: center;
+}
+footer {
+	padding: 30px 10px;
+	text-align: center;
+	background-color: #ddd;
+}
+
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+	.nav-items {
+		display: block;
+	}
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #333;
+		transition: color 0.3s;
+	}
+	.nav-items a:hover {
+		color: #09f;
+	}
+
+	.header {
+		height: 400px;
+		background-image: url("../img/herobig.jpg");
+	}
+	.hero-txt h1 {
+		font-size: 36px;
+	}
+	.hero-txt p {
+		font-size: 16px;
+	}
+	.product h3 {
+		font-size: 24px;
+	}
+}
+@media (min-width: 998px) {
+	.products-box {
+		font-size: 0;
+	}
+	.product {
+		display: inline-block;
+		width: 50%;
+	}
+}
+@media (min-width: 1200px) {
+	.header {
+		height: 600px;
+	}
+	.hero-txt h1 {
+		font-size: 40px;
+	}
+	.hero-txt p {
+		font-size: 20px;
+	}
+}
